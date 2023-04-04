@@ -1,0 +1,12 @@
+{
+    "cSpell.words": [
+        "Schyler",
+        "supabase",
+        "timeago"
+    ],
+    "[dart]": {
+        "editor.rulers": [
+            120
+        ],
+    }
+}
