@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../pages/chat_page.dart';
 import '../pages/register_page.dart';
 import '../utils/constants.dart';
 
@@ -25,11 +24,9 @@ class SplashPageState extends State<SplashPage> {
 
     final session = supabase.auth.currentSession;
     if (session == null) {
-      Navigator.of(context)
-          .pushAndRemoveUntil(RegisterPage.route(), (route) => false);
+      Navigator.of(context).pushAndRemoveUntil(RegisterPage.route(), (route) => false);
     } else {
-      Navigator.of(context)
-          .pushAndRemoveUntil(ChatPage.route(), (route) => false);
+      Navigator.of(context).pushAndRemoveUntil(ChatPage.route(), (route) => false);
     }
   }
 
