@@ -3,6 +3,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../pages/login_page.dart';
 import '../utils/constants.dart';
+import 'chat_page.dart';
 
 class RegisterPage extends StatefulWidget {
   const RegisterPage({Key? key, required this.isRegistering}) : super(key: key);
